@@ -1,6 +1,6 @@
 {
   "name": "@parviz-mv/release-it-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The example of a release-it lib with config file.",
   "type": "module",
   "scripts": {
