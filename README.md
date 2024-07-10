@@ -36,9 +36,7 @@ or
 npx release-it
 ```
 
-You will see the release process in the console. Then you can see the release in github.
-
-The release result in github:
+You will see the release process in the console. Then you can see the release in github:
 
 ![release-result](./assets/release-result.png)
 
