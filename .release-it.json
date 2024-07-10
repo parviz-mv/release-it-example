@@ -1,0 +1,43 @@
+{
+  "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+  "github": {
+    "release": true,
+    "releaseName": "${version}",
+    "assets": ["./dist/*.zip", "./dist/*.tgz"]
+  },
+  "npm": false,
+  "git": {
+    "requireCleanWorkingDir": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "ignoreRecommendedBump": true,
+      "infile": "CHANGELOG.md",
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          },
+          {
+            "type": "docs",
+            "section": "Documentation"
+          },
+          {
+            "type": "perf",
+            "section": "Performance"
+          }
+        ]
+      }
+    },
+    "@release-it/bumper": {
+      "in": "package.json",
+      "out": ["package.json"]
+    }
+  }
+}
