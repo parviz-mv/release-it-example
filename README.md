@@ -18,7 +18,7 @@ git clone https://github.com/parviz-mv/release-it-example.git
 npm install
 ```
 
-3. Create a `.env` file with the your github token:
+3. Create a `.env` file and add your github token:
 
 ```bash
 GITHUB_TOKEN=your-github-token
